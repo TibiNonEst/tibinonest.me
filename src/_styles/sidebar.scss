@@ -1,0 +1,80 @@
+@import "variables";
+
+aside {
+  width: $sidebar-width;
+  background-color: var(--mantle);
+  text-align: center;
+  height: 100%;
+  z-index: 2;
+  transition: transform .5s ease, visibility .5s ease;
+  display: flex;
+  position: fixed;
+
+  & > div {
+    flex-direction: column;
+    padding: 2rem;
+    display: flex;
+  }
+}
+
+.sidebar-trigger {
+  z-index: 1;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 2rem;
+  margin: .35rem;
+  line-height: 1rem;
+  display: none;
+  position: fixed;
+}
+
+.sidebar-trigger-internal {
+  display: none;
+}
+
+.shade {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity .5s ease, visibility .5s ease;
+  display: none;
+  position: fixed;
+}
+
+@media screen and (max-width: 850px) {
+  aside {
+    visibility: hidden;
+    transform: translateX(-150%);
+  }
+
+  .sidebar-trigger {
+    display: block;
+  }
+
+  section {
+    margin-left: 0;
+  }
+
+  .sidebar-trigger-internal:checked ~ aside {
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .sidebar-trigger-internal:checked ~ .shade {
+    visibility: visible;
+    opacity: 100%;
+  }
+
+  .shade {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  aside, .shade {
+    transition: none;
+  }
+}

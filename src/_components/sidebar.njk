@@ -1,0 +1,39 @@
+<input type="checkbox" id="sidebar-trigger" class="sidebar-trigger-internal" aria-hidden="true">
+<label for="sidebar-trigger" class="sidebar-trigger">
+    <svg width="40" height="40" viewBox="0 0 40 40" stroke="var(--subtext1)" stroke-width="2px" stroke-linecap="round" shape-rendering="crispedges">
+        <line x1="12" y1="14" x2="28" y2="14"></line>
+        <line x1="12" y1="20" x2="28" y2="20"></line>
+        <line x1="12" y1="26" x2="28" y2="26"></line>
+    </svg>
+</label>
+<label for="sidebar-trigger" class="shade"></label>
+
+<aside>
+    <div>
+        <a href="/" class="title">
+            <img src="https://cdn.tibinonest.me/tibs.png" alt="tibs' avatar" class="logo">
+            <h2>tibs</h2>
+        </a>
+
+        <hr>
+
+        <div class="menu">
+            {%- for page in search.pages("menu>0", "menu") | data %}
+                <a href="{{ page.url }}" {% if page.url==url %} class="active" {% endif %}>{{ page.title }}</a>
+            {%- endfor %}
+            <a href="/ssh">Ssh</a>
+            <a href="/pgp">Pgp</a>
+        </div>
+
+        <div class="socials">
+            <span id="theme-trigger"><i class="fa-solid fa-circle-half-stroke"></i></span>
+
+            <span>|</span>
+
+            <a href="https://github.com/TibiNonEst"><i class="fa-brands fa-github"></i></a>
+            <a href="https://discord.tibinonest.me"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://blobfox.coffee/@tibs"><i class="fa-brands fa-mastodon"></i></a>
+            <a href="https://www.twitch.tv/tibinonest"><i class="fa-brands fa-twitch"></i></a>
+        </div>
+    </div>
+</aside>

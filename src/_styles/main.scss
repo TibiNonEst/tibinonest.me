@@ -1,0 +1,128 @@
+@import "vendor/normalize-8.0.1";
+@import "variables";
+@import "colors";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--base);
+  color: var(--text);
+  font-family: sans-serif;
+  line-height: 1.5rem;
+}
+
+section {
+  height: 100%;
+  flex-direction: column;
+  margin-left: $sidebar-width;
+  display: flex;
+}
+
+main {
+  padding: 0 1.5rem;
+}
+
+footer {
+  background-color: var(--crust);
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+a {
+  color: var(--rosewater);
+
+  &:hover {
+    color: var(--rosewater-dark)
+  }
+}
+
+hr {
+  width: 100%;
+  color: var(--text);
+}
+
+code {
+  background-color: var(--crust);
+  border-radius: .25rem;
+  padding: 0 .2rem;
+}
+
+.title, .title:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.menu {
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 1rem 0;
+  display: flex;
+
+  a {
+    margin: .25rem 0;
+  }
+
+  .active {
+    color: var(--rosewater-darker);
+  }
+}
+
+.socials a, span {
+  color: var(--text);
+  margin: 0 .25rem;
+  font-size: 1.25rem;
+
+  &:hover {
+    color: var(--text-dark);
+  }
+}
+
+#theme-trigger {
+  cursor: pointer;
+}
+
+.logo {
+  width: 100%;
+  border-radius: 10rem;
+}
+
+// Fix fontawesome vertical alignment
+.fa-solid, .fa-brands {
+  vertical-align: -.1rem;
+}
+
+.not-found {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    background-color: var(--rosewater);
+    color: var(--base);
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      background-color: var(--rosewater-dark);
+    }
+  }
+}

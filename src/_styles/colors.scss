@@ -1,0 +1,39 @@
+@import "vendor/catppuccin";
+
+@mixin set_theme($map) {
+  @each $name, $color in $map {
+    --#{$name}: #{$color};
+    --#{$name}-dark: #{darken($color, 5)};
+    --#{$name}-darker: #{darken($color, 10)};
+  }
+}
+
+@each $flavor, $map in $palette {
+  :root[data-theme=#{$flavor}] {
+    @include set_theme($map);
+
+    @if $flavor == "latte" {
+      color-scheme: light;
+    } @else {
+      color-scheme: dark;
+    }
+  }
+}
+
+
+// Kept for theming for those without JS
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include set_theme(map-get($palette, "macchiato"));
+
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @include set_theme(map-get($palette, "latte"));
+
+    color-scheme: light;
+  }
+}
