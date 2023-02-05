@@ -82,6 +82,14 @@ code {
   &:hover {
     color: var(--text-dark);
   }
+
+  i {
+    vertical-align: -.125rem;
+  }
+
+  svg {
+    vertical-align: -.25rem !important;
+  }
 }
 
 #theme-trigger {
@@ -91,11 +99,6 @@ code {
 .logo {
   width: 100%;
   border-radius: 10rem;
-}
-
-// Fix fontawesome vertical alignment
-.fa-solid, .fa-brands {
-  vertical-align: -.1rem;
 }
 
 .not-found {
