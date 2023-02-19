@@ -5,7 +5,7 @@ layout: layout.njk
 # Hiya 👋, I'm tibs!
 
 I'm a queer and nonbinary software developer and system administrator.
-I use they/them pronouns, see my [pronouns.page](https://en.pronouns.page/@tibs) for more info.
+I use they/them pronouns, see my <a href="https://en.pronouns.page/@tibs" rel="me">pronouns.page</a> for more info.
 You may also see me online as TibiNonEst, the vestiges of an old username.
 
 
