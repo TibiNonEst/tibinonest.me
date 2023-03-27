@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import nav from "lume/plugins/nav.ts";
 import sass from "lume/plugins/sass.ts";
 import lightningCss from "lume/plugins/lightningcss.ts";
 import terser from "lume/plugins/terser.ts";
@@ -11,6 +12,7 @@ const site = lume({
 	}
 });
 
+site.use(nav({ order: "order" }));
 site.use(sass({ includes: "_styles" }));
 site.use(lightningCss());
 site.use(terser());

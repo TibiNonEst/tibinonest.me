@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    {{ comp.sidebar() | safe}}
+    {{ comp.sidebar({ url: url }) | safe}}
 
     <section>
         <main>{{ content | safe }}</main>
