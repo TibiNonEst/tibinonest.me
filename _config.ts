@@ -12,7 +12,7 @@ const site = lume({
 	}
 });
 
-site.use(nav({ order: "order" }));
+site.use(nav());
 site.use(sass({ includes: "_styles" }));
 site.use(lightningCss());
 site.use(terser());

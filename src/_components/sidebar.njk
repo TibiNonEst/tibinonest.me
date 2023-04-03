@@ -18,10 +18,8 @@
         <hr>
 
         <div class="menu">
-            {%- for page in nav.menu().children | data %}
-                {%- if page.order %}
-                    <a href="{{ page.url }}" class={{ "active" if page.url === url }}>{{ page.title }}</a>
-                {%- endif %}
+            {%- for page in nav.menu("/", "order>0", "order").children | data %}
+                <a href="{{ page.url }}" class={{ "active" if page.url === url }}>{{ page.title }}</a>
             {%- endfor %}
             <a href="/ssh">SSH</a>
             <a href="/pgp">PGP</a>
