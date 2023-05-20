@@ -13,7 +13,7 @@ const site = lume({
 });
 
 site.use(nav());
-site.use(sass({ includes: "_styles" }));
+site.use(sass());
 site.use(lightningCss());
 site.use(terser());
 site.use(minifyHTML({

@@ -1,4 +1,4 @@
-@import "vendor/catppuccin";
+@import "_vendor/catppuccin";
 
 @mixin set_theme($map) {
   @each $name, $color in $map {
