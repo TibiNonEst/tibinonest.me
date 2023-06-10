@@ -15,7 +15,7 @@ const site = lume({
 });
 
 site.use(nav());
-site.use(sass());
+site.use(sass({ includes: "_styles" }));
 site.use(lightningCss());
 site.use(terser());
 site.use(sitemap({ query: "index!=false" }));
