@@ -51,7 +51,15 @@ hr {
 code {
   background-color: var(--crust);
   border-radius: .25rem;
-  padding: 0 .2rem;
+  padding: .1rem .25rem;
+}
+
+pre {
+  display: inline-block;
+  background-color: var(--crust);
+  border-radius: .25rem;
+  padding: .75rem .9rem;
+  margin-top: 0;
 }
 
 .title, .title:hover {

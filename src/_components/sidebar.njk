@@ -1,6 +1,7 @@
 <input type="checkbox" id="sidebar-trigger" class="sidebar-trigger-internal" aria-hidden="true">
 <label for="sidebar-trigger" class="sidebar-trigger">
-    <svg width="40" height="40" viewBox="0 0 40 40" stroke="var(--subtext1)" stroke-width="2px" stroke-linecap="round" shape-rendering="crispedges">
+    <svg width="40" height="40" viewBox="0 0 40 40" stroke="var(--subtext1)" stroke-width="2px" stroke-linecap="round"
+         shape-rendering="crispedges">
         <line x1="12" y1="14" x2="28" y2="14"></line>
         <line x1="12" y1="20" x2="28" y2="20"></line>
         <line x1="12" y1="26" x2="28" y2="26"></line>
@@ -18,11 +19,9 @@
         <hr>
 
         <div class="menu">
-            {%- for page in nav.menu("/", "order>0", "order").children | data %}
+            {%- for page in nav.menu("/", "order>0", "order=asc").children | data %}
                 <a href="{{ page.url }}" class={{ "active" if page.url === url }}>{{ page.title }}</a>
             {%- endfor %}
-            <a href="/ssh">SSH</a>
-            <a href="/pgp">PGP</a>
         </div>
 
         <div class="socials">
