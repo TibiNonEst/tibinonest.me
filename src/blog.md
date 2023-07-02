@@ -4,4 +4,4 @@ title: Blog
 order: 1
 ---
 
-<h1>⚠️ Blog coming soon</h1>
+# ⚠️ Blog coming soon

@@ -12,14 +12,14 @@
 <aside>
     <div>
         <a href="/" class="title">
-            <img src="https://cdn.tibinonest.me/tibs.png" alt="tibs' avatar" class="logo">
+            <img src="/tibs.png" alt="tibs' avatar" class="logo" imagick="avif webp jpg png 192@2">
             <h2>tibs</h2>
         </a>
 
         <hr>
 
         <div class="menu">
-            {%- for page in nav.menu("/", "order>0", "order=asc").children | data %}
+            {%- for page in search.pages("order>0", "order=asc") | data %}
                 <a href="{{ page.url }}" class={{ "active" if page.url === url }}>{{ page.title }}</a>
             {%- endfor %}
         </div>

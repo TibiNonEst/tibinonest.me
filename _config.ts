@@ -1,5 +1,8 @@
 import lume from "lume/mod.ts";
-import nav from "lume/plugins/nav.ts";
+import remark from "lume/plugins/remark.ts";
+import a11yEmoji from 'npm:@fec/remark-a11y-emoji';
+import picture from "lume/plugins/picture.ts";
+import imagick from "lume/plugins/imagick.ts";
 import sass from "lume/plugins/sass.ts";
 import lightningCss from "lume/plugins/lightningcss.ts";
 import terser from "lume/plugins/terser.ts";
@@ -14,7 +17,11 @@ const site = lume({
 	}
 });
 
-site.use(nav());
+site.remoteFile("tibs.png", "https://cdn.tibinonest.me/tibs.png");
+
+site.use(remark({ remarkPlugins: [a11yEmoji] }));
+site.use(picture());
+site.use(imagick());
 site.use(sass({ includes: "_styles" }));
 site.use(lightningCss());
 site.use(terser());

@@ -39,7 +39,7 @@ a {
   color: var(--rosewater);
 
   &:hover {
-    color: var(--rosewater-dark)
+    color: var(--rosewater-darker)
   }
 }
 
@@ -82,7 +82,7 @@ pre {
   }
 }
 
-.socials a, span {
+.socials a, .socials span {
   color: var(--text);
   margin: 0 .25rem;
   font-size: 1.25rem;
