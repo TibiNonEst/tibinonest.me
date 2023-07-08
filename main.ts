@@ -16,7 +16,7 @@ server.use(async (request, next) => {
 	return await next(request);
 });
 
-server.use(notFound({ root: `${Deno.cwd()}/_site`, page404: "404/" }));
+server.use(notFound({ root: `${Deno.cwd()}/_site`, page404: "404.html" }));
 
 console.log("Listening on http://localhost:8000");
 
