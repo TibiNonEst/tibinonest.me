@@ -3,7 +3,6 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
-    "serve": "deno task lume -s",
-    "start": "deno run --allow-read --allow-net main.ts"
+    "serve": "deno task lume -s"
   }
 }

@@ -30,7 +30,11 @@ site.use(sass({ includes: "_styles" }));
 site.use(lightningCss());
 site.use(terser());
 site.use(modifyUrls({ fn: url => url.endsWith(".html") ? url.slice(0, -5) : url }));
-site.use(sitemap({ changefreq: _ => "monthly", priority: data => data.url?.toString().endsWith("index.html") ? 1 : 0.8 }));
+site.use(sitemap({
+	lastmod: _ => new Date(),
+	changefreq: _ => "monthly",
+	priority: data => data.url?.toString().endsWith("index.html") ? 1 : 0.8
+}));
 site.use(minifyHTML({
 	options: {
 		do_not_minify_doctype: true,
