@@ -10,15 +10,15 @@ TibiNonEst, the vestiges of an old username.
 
 I don't particularly like talking about myself, but I guess you're here for a reason so here goes!
 
-I am a administrator, developer on the build tools team, and moderator at [QuiltMC](https://quiltmc.org), where I also
-co-run our monthly development updates. Outside of Quilt, I am also a member of a myriad of development teams, including
-[ProxyFox](https://proxyfox.dev), [WispLang](https://github.com/WispLang), [Debuggy](https://github.com/DebuggyTeam),
-[Helix Launcher](https://helixlauncher.dev), [Sweet Berry Collective](https://github.com/Sweet-Berry-Collective),
-[Vulpark](https://github.com/vulpark), and [DuvetMC](https://github.com/DuvetMC). I have experience in a number of
-programming languages, but these days find myself working mainly in Java, Rust, Kotlin, or Typescript. I have worked on
-a few major projects over the years, namely my Minecraft mod Cauldron Dyeing and the official Quilt build tool Loom
-(and soon QuiltGradle), you can learn more about these and others below. Outside of development, I play a few
-instruments, some better some worse, and am very involved in the theater scene at my school.
+I am a administrator and developer at [QuiltMC](https://quiltmc.org), where I also co-run our monthly development updates.
+Outside of Quilt, I am also a member of a myriad of development teams, including [ProxyFox](https://proxyfox.dev),
+[WispLang](https://github.com/WispLang), [Debuggy](https://github.com/DebuggyTeam), [Helix Launcher](https://helixlauncher.dev),
+[Sweet Berry Collective](https://github.com/Sweet-Berry-Collective), [Vulpark](https://github.com/vulpark), and
+[DuvetMC](https://github.com/DuvetMC). I have experience in a number of programming languages, but these days find myself
+working mainly in Java, Rust, Kotlin, or Typescript. I have worked on a few major projects over the years, namely my
+Minecraft mod Cauldron Dyeing and the official Quilt build tool Loom (and soon QuiltGradle), you can learn more about
+these and others below. Outside of development, I play a few instruments, some better some worse, and am very involved
+in the theater scene at my school.
 
 
 ## Current projects
