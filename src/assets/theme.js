@@ -6,11 +6,11 @@ if (saved === "macchiato") {
 } else if (saved === "latte") {
     setLight();
 } else {
-    testMedia()
+    testMedia();
 }
 
 dark.onchange = () => {
-    testMedia()
+    testMedia();
 }
 
 document.getElementById("theme-trigger").onclick = () => {

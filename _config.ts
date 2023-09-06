@@ -1,6 +1,6 @@
 import lume from "lume/mod.ts";
 import remark from "lume/plugins/remark.ts";
-import a11yEmoji from 'npm:@fec/remark-a11y-emoji';
+import a11yEmoji from "npm:@fec/remark-a11y-emoji";
 import picture from "lume/plugins/picture.ts";
 import imagick from "lume/plugins/imagick.ts";
 import sass from "lume/plugins/sass.ts";
