@@ -12,7 +12,7 @@ I don't particularly like talking about myself, but I guess you're here for a re
 
 I am an administrator and developer at [QuiltMC](https://quiltmc.org), where I am a member of the infrastructure and
 build tools team, the latter of which I lead. Outside of Quilt, I am also a member of a myriad of development teams,
-including[ProxyFox](https://proxyfox.dev), [WispLang](https://github.com/WispLang),
+including [ProxyFox](https://proxyfox.dev), [WispLang](https://github.com/WispLang),
 [Debuggy](https://github.com/DebuggyTeam), [Helix Launcher](https://helixlauncher.dev),
 [Sweet Berry Collective](https://github.com/Sweet-Berry-Collective), [Vulpark](https://github.com/vulpark), and
 [DuvetMC](https://github.com/DuvetMC). I have experience in a number of programming languages, but these days find
