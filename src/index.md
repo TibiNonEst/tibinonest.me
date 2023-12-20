@@ -4,14 +4,14 @@ layout: layout.njk
 
 # Hiya 👋, I'm tibs!
 
-I'm a queer and nonbinary software developer and system administrator. I use they/them pronouns, see my
+I'm a queer and nonbinary software developer and system administrator. I use she/they pronouns, see my
 <a href="https://en.pronouns.page/@tibs" rel="me">pronouns.page</a> for more info. You may also see me online as
 TibiNonEst, the vestiges of an old username.
 
 I don't particularly like talking about myself, but I guess you're here for a reason so here goes!
 
 I am an administrator and developer at [QuiltMC](https://quiltmc.org), where I am a member of the infrastructure and
-build tools team, the latter of which I lead. Outside of Quilt, I am also a member of a myriad of development teams,
+build tools teams, the latter of which I lead. Outside of Quilt, I am also a member of a myriad of development teams,
 including [ProxyFox](https://proxyfox.dev), [WispLang](https://github.com/WispLang),
 [Debuggy](https://github.com/DebuggyTeam), [Helix Launcher](https://helixlauncher.dev),
 [Sweet Berry Collective](https://github.com/Sweet-Berry-Collective), [Vulpark](https://github.com/vulpark), and
@@ -44,9 +44,9 @@ involved in the theater scene at my school.
 
 ## System administration
 I have been hosting my own servers for everything from gaming to websites for the better part of 5 years. Over this
-time I have learned quite a few things about what to, and what not to do in system administration. I currently run two
-cloud servers, one acting as a WireGuard hub through which I proxy all my traffic, and the other as a main host for my
-web services, both running Alpine Linux. The latter includes my personal git server, available at
+time I have learned quite a few things about what to, and what not to do in system administration. I run one main cloud
+server acting as a both WireGuard hub through which I proxy all my traffic, and also as a main host for my
+web services. This server runs on Alpine Linux and its services include my personal git server, available at
 [git.tibinonest.me](https://git.tibinonest.me), and maven, at [maven.tibinonest.me](https://maven.tibinonest.me).
 Additionally, I host many Minecraft servers on a local machine, with their traffic proxied through my WireGuard server
 to maintain privacy. Most of these servers are just between friends, but for a while I hosted the
