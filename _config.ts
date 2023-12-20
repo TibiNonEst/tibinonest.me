@@ -19,7 +19,7 @@ const site = lume({
 	}
 });
 
-site.remoteFile("assets/tibs.png", "https://cdn.tibinonest.me/tibs.png");
+site.remoteFile("assets/tibs.jpg", "https://cdn.tibinonest.me/tibs.jpg");
 site.remoteFile("_styles/vendor/_normalize.scss", "https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css");
 site.remoteFile("_styles/vendor/_catppuccin.scss", "https://cdn.jsdelivr.net/gh/catppuccin/palette/scss/_catppuccin.scss");
 
